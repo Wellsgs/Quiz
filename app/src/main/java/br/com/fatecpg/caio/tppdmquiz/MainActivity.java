@@ -4,17 +4,59 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.text.NumberFormat;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    ArrayList<String> ht = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NumberFormat nf = NumberFormat.getInstance();
+        nf.setMinimumFractionDigits(2);
+        nf.setMaximumFractionDigits(2);
+
+        String fileName = "history";
+
+        try{
+            FileInputStream fis = openFileInput(fileName);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+            String line = null, input = "";
+            while ((line = reader.readLine()) != null) {
+                ht.add(line);
+            }
+            reader.close();
+            fis.close();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        double total = 0;
+        for( String linha : ht ){
+            String[] separeted = linha.split("-");
+            total = total + Double.parseDouble(separeted[1].replace(']', ' ').trim());
+        }
+
+        String qt = "Total: "+ ht.size();
+        String md = "Media : "+ nf.format(total/ht.size());
+
+        TextView txqt = (TextView) findViewById(R.id.txtTotalJogadas);
+        TextView txmd = (TextView) findViewById(R.id.txtMediaJogadas);
+        txqt.setText(qt);
+        txmd.setText(md);
     }
 
     public void initTest(View view){
         Intent it = new Intent(getApplicationContext(), TestActivity.class);
         startActivity(it);
+        finish();
     }
 }
