@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Total: "
+                android:text="Total: 0"
                 android:textSize="25sp"
                 android:id="@+id/txtTotalJogadas"
                 />
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Média: "
+                android:text="Média: 0"
                 android:textSize="25sp"
                 android:id="@+id/txtMediaJogadas"
                 />

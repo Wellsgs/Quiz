@@ -26,17 +26,8 @@
         android:textAlignment="center"
         android:id="@+id/resultTextView" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Histórico de Jogadas"
-        android:layout_marginBottom="30dp"
-        android:textSize="30sp"
-        android:id="@+id/teste"
-        android:textAlignment="center" />
-
     <Button
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Voltar"
@@ -49,7 +40,5 @@
         android:layout_height="wrap_content"
         android:text="Historico"
         android:textSize="20sp"
-        android:onClick="history"/>
-
-
+        android:onClick="history" />
 </LinearLayout>
