@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.FileOutputStream;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -23,11 +24,15 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        NumberFormat nf = NumberFormat.getInstance();
+        nf.setMinimumFractionDigits(2);
+        nf.setMaximumFractionDigits(2);
+
         Intent i = getIntent();
         result = i.getDoubleExtra("result", 0);
 
         TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
-        resultTextView.setText(result+"%");
+        resultTextView.setText(nf.format(result));
 
         salvaHistory(result);
     }
@@ -42,8 +47,8 @@ public class ResultActivity extends AppCompatActivity {
 
             String now = dateFormat.format(data_atual);
             History h = new History();
-            h.date = now;
-            h.note = result;
+            h.setDate(now);
+            h.setNote(result);
             hist.add(h);
 
         String fileName = "history";
