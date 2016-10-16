@@ -15,13 +15,10 @@ import java.util.ArrayList;
 public class HistoryActivity extends AppCompatActivity {
     ArrayList<String> ht = new ArrayList<>();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-
-       ArrayList<History> hist = (ArrayList<History>)getIntent().getSerializableExtra("hist");
 
        ListView listView1 = (ListView) findViewById(R.id.historyListView);
 

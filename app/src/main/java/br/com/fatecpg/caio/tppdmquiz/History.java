@@ -7,8 +7,25 @@ import java.text.NumberFormat;
  */
 
 public class History{
-    public String date;
-    public double  note;
+    private String date;
+    private double  note;
+
+
+    public double getNote() {
+        return note;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setNote(double note) {
+        this.note = note;
+    }
 
 
     public String toString() {
@@ -16,7 +33,7 @@ public class History{
         nf.setMinimumFractionDigits(2);
         nf.setMaximumFractionDigits(2);
 
-        return String.format(this.date + " -> " + nf.format(this.note));
+        return String.format(this.date + " - " + nf.format(this.note));
     }
 
 }
