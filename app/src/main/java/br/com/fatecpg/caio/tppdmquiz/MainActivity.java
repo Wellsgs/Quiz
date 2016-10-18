@@ -45,8 +45,15 @@ public class MainActivity extends AppCompatActivity {
             total = total + Double.parseDouble(separeted[1].replace(']', ' ').trim());
         }
 
+        double media  = total/ht.size();
+
         String qt = "Total: "+ ht.size();
-        String md = "Media : "+ nf.format(total/ht.size());
+
+        String md = "Media: "+ 0;
+
+        if(media > 0) {
+            md = "Media: " + nf.format(media);
+        }
 
         TextView txqt = (TextView) findViewById(R.id.txtTotalJogadas);
         TextView txmd = (TextView) findViewById(R.id.txtMediaJogadas);
