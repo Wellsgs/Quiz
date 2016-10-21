@@ -41,11 +41,11 @@ public class TestActivity extends AppCompatActivity {
         //2
         q = new Question();
         q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
+        q.answer = "Rede LAN - Rede MAN.";
         q.options = new String[]{   "Rede WAN - Rede LAN.",
                                     "Rede MAN - Rede WAN.",
-                                    "Rede LAN - Rede WAN.",
-                                    "Rede MAN - Rede LAN.",
+                                    "Rede LAN - Rede MAN.",
+                                    "Rede MAN - Rede LAN."
                                 };
         questions.add(q);
 
@@ -56,89 +56,89 @@ public class TestActivity extends AppCompatActivity {
         q.options = new String[]{   "<hr/>",
                 "<br/>",
                 "<hr></hr>",
-                "<br></br>",
+                "<br></br>"
         };
         questions.add(q);
 
         //4
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Todas as afirmações abaixo são verdadeiras, exceto:";
+        q.answer = "No diagrama de blocos, o retângulo não representa a entrada de dados.";
+        q.options = new String[]{   "O diagrama de blocos é formado apenas por figuras geométricas.",
+                "O círculo no diagrama de blocos representa um conector.",
+                "O losângo, no diagrama de blocos, representa decisão.",
+                "No diagrama de blocos, o retângulo não representa a entrada de dados."
         };
         questions.add(q);
 
         //5
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Assinale a alternativa que não contem uma propriedade de Visual Basic.";
+        q.answer = "Label.";
+        q.options = new String[]{   "Name.",
+                "Label.",
+                "Text.",
+                "BackColor."
         };
         questions.add(q);
 
 
         //6
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "HTML é uma linguagem de:";
+        q.answer = "Formatação.";
+        q.options = new String[]{   "Programação.",
+                "Formatação.",
+                "Visualização.",
+                "Programação de web."
         };
         questions.add(q);
 
 
         //7
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Qual das seguintes variáveis só aceita números inteiros?";
+        q.answer = "Long.";
+        q.options = new String[]{   "Long.",
+                "String.",
+                "Interger.",
+                "Double."
         };
         questions.add(q);
 
 
         //8
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Assinale a alternativa que não contém uma regra para nomeação de variáveis.";
+        q.answer = "Não podem ter números.";
+        q.options = new String[]{   "Não pode ser palavra reservada.",
+                "Os espaços devem ser dados por underline.",
+                "Não pode haver espaço.",
+                "Não podem ter números."
         };
         questions.add(q);
 
 
         //9
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Qual é a diferença de RAM e ROM?";
+        q.answer = "RAM é volátil, ROM é não-volátil.";
+        q.options = new String[]{   "RAM é volátil, ROM é não-volátil.",
+                "RAM não é volátil, ROM é volátil.",
+                "ROM armazena mais memória.",
+                "Nenhuma das alternativas está correta."
         };
         questions.add(q);
 
 
         //10
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Um programador está criando um programa que calcula o valor de delta numa equação de segundo grau. Como ele programaria isso em linguagem de programação do Visual Basic?";
+        q.answer = "d = b^2 - 4*a*c";
+        q.options = new String[]{   "d = b² - 4.a.c",
+                "d = b^2 + 4.a.c",
+                "d = b^2 - 4*a*c",
+                "d = b² - 4*a*c"
         };
         questions.add(q);
 
