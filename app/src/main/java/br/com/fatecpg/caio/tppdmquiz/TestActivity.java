@@ -4,21 +4,30 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class TestActivity extends AppCompatActivity {
     private ArrayList<Question> questions = new ArrayList<>();
+    private ArrayList <Question> quiz = new ArrayList<>();
     private ArrayList<String> answers = new ArrayList<>();
     private int position = 0;
+    public int qtq = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
+        qtq = getIntent().getIntExtra("qtq", 1);
+
+        System.out.println(qtq);
 
         createTest();
         clearAnswers();
@@ -27,15 +36,18 @@ public class TestActivity extends AppCompatActivity {
 
     private void createTest(){
 
+
         //1
         Question q = new Question();
+
         q.question = "Analise as seguintes frases e assinale a alternativa correta: I. Conjunto de programas. II. Usuários ou profissionais em TI. III. Parte física do computador.";
         q.answer = "I- Software, II- Peopleware, III- Hardware.";
         q.options = new String[]{   "I- Hardware, II- Software, III- Firmware.",
-                                    "I- Softeare, II- Firmware, III- Hardware.",
+                                    "I- Software, II- Firmware, III- Hardware.",
                                     "I- Software, II- Peopleware, III- Hardware.",
                                     "I- Software, II- Tupperware, III- Firmware.",
                                 };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //2
@@ -47,6 +59,7 @@ public class TestActivity extends AppCompatActivity {
                                     "Rede LAN - Rede MAN.",
                                     "Rede MAN - Rede LAN."
                                 };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //3
@@ -58,6 +71,7 @@ public class TestActivity extends AppCompatActivity {
                 "<hr></hr>",
                 "<br></br>"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //4
@@ -69,6 +83,7 @@ public class TestActivity extends AppCompatActivity {
                 "O losângo, no diagrama de blocos, representa decisão.",
                 "No diagrama de blocos, o retângulo não representa a entrada de dados."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //5
@@ -80,6 +95,7 @@ public class TestActivity extends AppCompatActivity {
                 "Text.",
                 "BackColor."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -92,6 +108,7 @@ public class TestActivity extends AppCompatActivity {
                 "Visualização.",
                 "Programação de web."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -104,6 +121,7 @@ public class TestActivity extends AppCompatActivity {
                 "Interger.",
                 "Double."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -116,6 +134,7 @@ public class TestActivity extends AppCompatActivity {
                 "Não pode haver espaço.",
                 "Não podem ter números."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -128,6 +147,7 @@ public class TestActivity extends AppCompatActivity {
                 "ROM armazena mais memória.",
                 "Nenhuma das alternativas está correta."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -140,6 +160,7 @@ public class TestActivity extends AppCompatActivity {
                 "d = b^2 - 4*a*c",
                 "d = b² - 4*a*c"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -152,6 +173,7 @@ public class TestActivity extends AppCompatActivity {
                 "Um Vídeo Game Antigo",
                 "Uma Máquina para criação de papel",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //12
@@ -163,6 +185,7 @@ public class TestActivity extends AppCompatActivity {
                 "Avaliar e observar diversos formatos de arquivo.",
                 "De uma peça de televisão."
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
 
@@ -175,6 +198,7 @@ public class TestActivity extends AppCompatActivity {
                 "Arquivo de Áudio",
                 "Arquivo Executável"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //14
@@ -186,6 +210,7 @@ public class TestActivity extends AppCompatActivity {
                 "Antivírus",
                 "Nero"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //15
@@ -197,6 +222,7 @@ public class TestActivity extends AppCompatActivity {
                 "Camtasia e Sony Vegas",
                 "Pivot e Image Ready"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //16
@@ -208,6 +234,7 @@ public class TestActivity extends AppCompatActivity {
                 "Monitor",
                 "teclado"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //17
@@ -219,6 +246,7 @@ public class TestActivity extends AppCompatActivity {
                 "Mozilla Firefox",
                 "Goolge Chrome"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //18
@@ -230,6 +258,7 @@ public class TestActivity extends AppCompatActivity {
                 "Ricardo Pupo",
                 "Rodrigo Salgado"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //19
@@ -241,6 +270,7 @@ public class TestActivity extends AppCompatActivity {
                 "Google",
                 "Blogspot"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //20
@@ -252,6 +282,7 @@ public class TestActivity extends AppCompatActivity {
                 "Picasa",
                 "Youtube"
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //21
@@ -263,6 +294,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //22
@@ -274,6 +306,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //23
@@ -285,6 +318,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //24
@@ -296,6 +330,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //25
@@ -307,6 +342,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //26
@@ -318,6 +354,8 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //27
@@ -329,6 +367,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //28
@@ -340,6 +379,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //29
@@ -351,6 +391,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //30
@@ -362,6 +403,7 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //30
@@ -373,23 +415,29 @@ public class TestActivity extends AppCompatActivity {
                 "Rede LAN - Rede WAN.",
                 "Rede MAN - Rede LAN.",
         };
+        Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
+        Collections.shuffle(questions);
 
+
+        for (int i = 1; i <= qtq; i++){
+            quiz.add(questions.get(i));
+        }
 
     }
 
     private void clearAnswers(){
-        for(Question question: questions){
+        for(Question question: quiz){
             answers.add("");
         }
     }
 
     private void refreshQuestion(){
-        Question q = questions.get(position);
+        Question q = quiz.get(position);
 
         TextView posTextView = (TextView) findViewById(R.id.positionTextView);
-        posTextView.setText((position+1)+" de " + questions.size());
+        posTextView.setText((position+1)+" de " + qtq);
 
         TextView qTextView = (TextView) findViewById(R.id.questionTextView);
         qTextView.setText(q.question);
@@ -403,6 +451,9 @@ public class TestActivity extends AppCompatActivity {
         RadioButton opt3 = (RadioButton) findViewById(R.id.option3Radio);
         opt3.setText(q.options[2]);
 
+        RadioButton opt4 = (RadioButton) findViewById(R.id.option4Radio);
+        opt4.setText(q.options[3]);
+
         RadioGroup group = (RadioGroup)findViewById(R.id.optionGroup);
         group.check(0);
 
@@ -412,6 +463,9 @@ public class TestActivity extends AppCompatActivity {
             group.check(R.id.option2Radio);
         else if(answers.get(position).equals(opt3.getText()))
             group.check(R.id.option3Radio);
+        else if(answers.get(position).equals(opt4.getText()))
+            group.check(R.id.option4Radio);
+
     }
 
     public void back(View view){
@@ -421,27 +475,31 @@ public class TestActivity extends AppCompatActivity {
         }
     }
 
-    public void next(View view){
-        if(position < questions.size()-1){
+    public void next(){
+        if(position < quiz.size()-1){
             position++;
             refreshQuestion();
+        }
+        else if(position == quiz.size()-1){
+            Button btn = (Button) findViewById(R.id.btnFinish);
+            btn.setVisibility(View.VISIBLE);
         }
     }
 
     public void optionSelection(View view){
         RadioButton opt = (RadioButton)findViewById(view.getId());
         answers.set(position, opt.getText().toString());
+        next();
     }
 
     public void finish(View view){
         int sum = 0;
-        for(int i=0; i<questions.size(); i++){
-            if(questions.get(i).answer.equals(answers.get(i))){
+        for(int i=0; i<quiz.size(); i++){
+            if(quiz.get(i).answer.equals(answers.get(i))){
                 sum++;
             }
         }
-
-        double result = 100.0 * (double)sum / (double)questions.size();
+        double result = 100.0 * (double)sum / (double)quiz.size();
 
         Intent i = new Intent(getApplicationContext(), ResultActivity.class);
         i.putExtra("result", result);
