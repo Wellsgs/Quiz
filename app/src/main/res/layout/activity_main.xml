@@ -24,15 +24,16 @@
                 android:layout_height="wrap_content"
                 android:text="Digite a quantidade de Questões do QUIZ. "
                 android:textSize="25sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="10"
                 android:textSize="30sp"
                 android:inputType="number"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:id="@+id/questionNumber" />
 
             <Button
                 android:layout_width="match_parent"

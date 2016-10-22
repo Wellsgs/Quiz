@@ -37,11 +37,7 @@
                     android:textSize="20sp"
                     android:text="x/x"
                     android:id="@+id/positionTextView"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Proxima"
-                    android:onClick="next"/>
+
             </LinearLayout>
 
     <TextView
@@ -92,6 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Finalizar"
+        android:visibility="invisible"
+        android:id="@+id/btnFinish"
         android:onClick="finish"
         android:textSize="36sp" />
 
