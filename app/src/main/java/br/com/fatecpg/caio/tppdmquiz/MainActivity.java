@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -48,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         double media  = total/ht.size();
 
         String qt = "Total: "+ ht.size();
-
         String md = "Media: "+ 0;
 
         if(media > 0) {
@@ -62,8 +62,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initTest(View view){
-        Intent it = new Intent(getApplicationContext(), TestActivity.class);
-        startActivity(it);
-        finish();
+        EditText qtq = (EditText) findViewById(R.id.questionNumber);
+
+        if(qtq.getText().toString().trim().isEmpty()){
+            qtq.setError("É necessário digitar um número!");
+        }else if((Integer.parseInt(qtq.getText().toString()) == 0)){
+            qtq.setError("É necessário digitar um número maior que 0");
+        }else{
+            String qt = qtq.getText().toString();
+            Intent it = new Intent(this, TestActivity.class);
+            it.putExtra("qtq", Integer.parseInt(qt));
+            startActivity(it);
+            finish();
+        }
     }
 }
