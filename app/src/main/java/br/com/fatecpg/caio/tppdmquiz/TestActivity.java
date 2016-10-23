@@ -32,6 +32,9 @@ public class TestActivity extends AppCompatActivity {
         createTest();
         clearAnswers();
         refreshQuestion();
+
+
+
     }
 
     private void createTest(){

@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
             qtq.setError("É necessário digitar um número!");
         }else if((Integer.parseInt(qtq.getText().toString()) == 0)){
             qtq.setError("É necessário digitar um número maior que 0");
+        }else if((Integer.parseInt(qtq.getText().toString()) > 30)){
+            qtq.setError("É necessário digitar um número até 30");
         }else{
             String qt = qtq.getText().toString();
             Intent it = new Intent(this, TestActivity.class);
