@@ -55,12 +55,12 @@ public class TestActivity extends AppCompatActivity {
 
         //2
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "Rede LAN - Rede MAN.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                                    "Rede MAN - Rede WAN.",
-                                    "Rede LAN - Rede MAN.",
-                                    "Rede MAN - Rede LAN."
+        q.question = "Originalmente, o único produto da atividade de Projeto que é realizado como parte do processo XP:";
+        q.answer = "São os cartões CRC.";
+        q.options = new String[]{   "São os cartões CRC.",
+                                    "São os diagramas de objetos.",
+                                    "É a codificação, feita em pares.",
+                                    "São os diagramas de seqüência."
                                 };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
