@@ -33,7 +33,7 @@ public class History{
         nf.setMinimumFractionDigits(2);
         nf.setMaximumFractionDigits(2);
 
-        return String.format(this.date + " - " + nf.format(this.note));
+        return String.format(this.date + " - Nota: " + nf.format(this.note));
     }
 
 }

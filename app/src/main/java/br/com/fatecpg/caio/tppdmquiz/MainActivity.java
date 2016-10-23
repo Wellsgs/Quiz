@@ -43,7 +43,10 @@ public class MainActivity extends AppCompatActivity {
         double total = 0;
         for( String linha : ht ){
             String[] separeted = linha.split("-");
-            total = total + Double.parseDouble(separeted[1].replace(']', ' ').trim());
+            String str = separeted[1].replace(']', ' ');
+            str  = str.replace("Nota:", " ");
+
+            total = total + Double.parseDouble(str.trim());
         }
 
         double media  = total/ht.size();

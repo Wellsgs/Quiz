@@ -27,8 +27,10 @@ public class HistoryActivity extends AppCompatActivity {
         try{
             FileInputStream fis = openFileInput(fileName);
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-            String line = null, input = "";
+            String line = null;
             while ((line = reader.readLine()) != null) {
+                line =  line.replace('[', ' ').trim();
+                line = line.replace(']', ' ').trim();
                 ht.add(line);
             }
             reader.close();
