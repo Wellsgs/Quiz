@@ -32,7 +32,7 @@ public class TestActivity extends AppCompatActivity {
         createTest();
         clearAnswers();
         refreshQuestion();
-        buttonVisible();
+        AnteriorButtonVisible();
     }
 
     private void createTest(){
@@ -475,7 +475,7 @@ public class TestActivity extends AppCompatActivity {
             refreshQuestion();
         }
 
-        buttonVisible();
+        AnteriorButtonVisible();
     }
 
     public void next(){
@@ -488,7 +488,7 @@ public class TestActivity extends AppCompatActivity {
             btn.setVisibility(View.VISIBLE);
         }
 
-        buttonVisible();
+        AnteriorButtonVisible();
 
     }
 
@@ -515,7 +515,7 @@ public class TestActivity extends AppCompatActivity {
         finish();
     }
 
-    public void buttonVisible(){
+    public void AnteriorButtonVisible(){
 
         Button anteriorBtn = (Button) findViewById(R.id.anteriorButton);
         if(position == 0){
