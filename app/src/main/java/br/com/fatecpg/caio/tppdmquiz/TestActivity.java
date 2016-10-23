@@ -290,72 +290,72 @@ public class TestActivity extends AppCompatActivity {
 
         //21
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Assinale a exceção";
+        q.answer = "Bloco de notas.";
+        q.options = new String[]{   "Netbeans.",
+                "Visual Studio.",
+                "Eclipse.",
+                "Bloco de notas.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //22
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Assinale a exceção";
+        q.answer = "CSS.";
+        q.options = new String[]{   "PHP.",
+                "C#.",
+                "Java.",
+                "CSS.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //23
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Assinale a exceção";
+        q.answer = "Diagrama de BD.";
+        q.options = new String[]{   "Diagrama de BD.",
+                "Diagrama de classe.",
+                "Diagrama de casos de uso.",
+                "Diagrama de sequência.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //24
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Como são chamadas as iterações no Scrum?";
+        q.answer = "Sprints.";
+        q.options = new String[]{   "Sprints.",
+                "Iterações.",
+                "Interações.",
+                "Springs.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //25
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Qual a linguagem para documentar?";
+        q.answer = "UML.";
+        q.options = new String[]{   "UML.",
+                "SQL.",
+                "Scrum.",
+                "C.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //26
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "São práticas recomendadas pelo XP, exceto:";
+        q.answer = "Documentação Abundante e Detalhada.";
+        q.options = new String[]{   "Documentação Abundante e Detalhada.",
+                "Programação em Pares.",
+                "Integração Contínua.",
+                "Refatoração Frequente.",
         };
 
         Collections.shuffle(Arrays.asList(q.options));
@@ -363,60 +363,60 @@ public class TestActivity extends AppCompatActivity {
 
         //27
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Requisitos relacionados ao uso da aplicação em termos de desempenho, usabilidade e confiabilidade são chamados de:";
+        q.answer = "requisitos não-funcionais.";
+        q.options = new String[]{   "requisitos não-funcionais.",
+                "requisitos pseudo-funcionais.",
+                "requisitos mistos.",
+                "requisitos semi-funcionais.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //28
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Qual diagrama pode ser entendido até pelo cliente?";
+        q.answer = "Caso de uso.";
+        q.options = new String[]{   "Caso de uso.",
+                "Classe.",
+                "Sequência.",
+                "Objeto.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //29
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "Assinale a exceção";
+        q.answer = "Abusivo.";
+        q.options = new String[]{   "Abusivo.",
+                "Cascata.",
+                "Espiral.",
+                "Incremental.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
         //30
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "São atividades do processo de elicitação de requisitos, exceto:";
+        q.answer = "Wave.";
+        q.options = new String[]{   "Wave.",
+                "Obtenção.",
+                "Classificação e organização.",
+                "Documentação.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
 
-        //30
+        //31
         q = new Question();
-        q.question = "Uma empresa possui duas filiais em São Paulo. A primeira filial possui 4 agências próximas e a segunda filial possui 2 agências próximas uma das outras. O dono da empresa quer fazer uma rede interligando os computadores de cada filial e outra rede para interligar as duas filiais. Qual é o tipo de rede que ele deve usar para interligar, respectivamente, os computadores de cada filial e outra para interligar as filiais?";
-        q.answer = "I- Software, II- Peopleware, III- Hardware.";
-        q.options = new String[]{   "Rede WAN - Rede LAN.",
-                "Rede MAN - Rede WAN.",
-                "Rede LAN - Rede WAN.",
-                "Rede MAN - Rede LAN.",
+        q.question = "São do tipo não funcionais, relacionado ao produto software, apenas os requisitos de:";
+        q.answer = "Desempenho e de portabilidade.";
+        q.options = new String[]{   "Desempenho e de portabilidade.",
+                "Desempenho e de entrega.",
+                "Portabilidade e legais.",
+                "Facilidade de uso e legais.",
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
