@@ -38,8 +38,6 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void createTest(){
-
-
         //1
         Question q = new Question();
 
@@ -67,9 +65,10 @@ public class TestActivity extends AppCompatActivity {
 
         //3
         q = new Question();
-        q.question = "Se um profissional está criando um site em HTML e ele quiser colocar uma barra horizontal em sua página, qual tag ele deve usar?";
+        q.question = "Em HTML ára colocar uma barra horizontal em sua página, qual tag devemos usar?";
         q.answer = "<hr/>";
-        q.options = new String[]{   "<hr/>",
+        q.options = new String[]{
+                "<hr/>",
                 "<br/>",
                 "<hr></hr>",
                 "<br></br>"
@@ -92,11 +91,12 @@ public class TestActivity extends AppCompatActivity {
         //5
         q = new Question();
         q.question = "Assinale a alternativa que não contem uma propriedade de Visual Basic.";
-        q.answer = "Label.";
-        q.options = new String[]{   "Name.",
-                "Label.",
-                "Text.",
-                "BackColor."
+        q.answer = "Label";
+        q.options = new String[]{
+                "Name",
+                "Label",
+                "Text",
+                "BackColor"
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
@@ -104,12 +104,12 @@ public class TestActivity extends AppCompatActivity {
 
         //6
         q = new Question();
-        q.question = "HTML é uma linguagem de:";
-        q.answer = "Formatação.";
-        q.options = new String[]{   "Programação.",
-                "Formatação.",
-                "Visualização.",
-                "Programação de web."
+        q.question = "HTML é considerado uma linguagem de:";
+        q.answer = "Marcação";
+        q.options = new String[]{   "Programação",
+                "Marcação",
+                "Visualização",
+                "Programação de web"
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
@@ -118,11 +118,11 @@ public class TestActivity extends AppCompatActivity {
         //7
         q = new Question();
         q.question = "Qual das seguintes variáveis só aceita números inteiros?";
-        q.answer = "Long.";
-        q.options = new String[]{   "Long.",
-                "String.",
-                "Interger.",
-                "Double."
+        q.answer = "Interger";
+        q.options = new String[]{   "Long",
+                "String",
+                "Interger",
+                "Double"
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
@@ -130,10 +130,10 @@ public class TestActivity extends AppCompatActivity {
 
         //8
         q = new Question();
-        q.question = "Assinale a alternativa que não contém uma regra para nomeação de variáveis.";
+        q.question = "Assinale a alternativa que não é uma regra para nomeação de variáveis.";
         q.answer = "Não podem ter números.";
         q.options = new String[]{   "Não pode ser palavra reservada.",
-                "Os espaços devem ser dados por underline.",
+                "Os espaços podem ser dados por underline.",
                 "Não pode haver espaço.",
                 "Não podem ter números."
         };
@@ -223,7 +223,7 @@ public class TestActivity extends AppCompatActivity {
         q.options = new String[]{   "Windows, Mac OS X e Linux",
                 "Photoshop, Flash e Adobe Premiere",
                 "Camtasia e Sony Vegas",
-                "Pivot e Image Ready"
+                "Calculadora e Excel"
         };
         Collections.shuffle(Arrays.asList(q.options));
         questions.add(q);
@@ -280,7 +280,7 @@ public class TestActivity extends AppCompatActivity {
         q = new Question();
         q.question = "Qual a Ferramenta do Google usada para assistir Vídeos?";
         q.answer = "Youtube";
-        q.options = new String[]{   "G-mail",
+        q.options = new String[]{   "Gmail",
                 "Orkut",
                 "Picasa",
                 "Youtube"
