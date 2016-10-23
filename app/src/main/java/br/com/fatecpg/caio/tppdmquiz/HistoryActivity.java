@@ -20,7 +20,7 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher_quiz);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher_quiz2);
 
        ListView listView1 = (ListView) findViewById(R.id.historyListView);
 

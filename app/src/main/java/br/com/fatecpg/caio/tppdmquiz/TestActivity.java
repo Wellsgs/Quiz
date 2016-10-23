@@ -25,7 +25,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher_quiz);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher_quiz2);
 
         qtq = getIntent().getIntExtra("qtq", 1);
 

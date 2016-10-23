@@ -24,7 +24,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher_quiz);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher_quiz2);
 
         NumberFormat nf = NumberFormat.getInstance();
         nf.setMinimumFractionDigits(2);
