@@ -32,9 +32,7 @@ public class TestActivity extends AppCompatActivity {
         createTest();
         clearAnswers();
         refreshQuestion();
-
-
-
+        buttonVisible();
     }
 
     private void createTest(){
@@ -476,6 +474,8 @@ public class TestActivity extends AppCompatActivity {
             position--;
             refreshQuestion();
         }
+
+        buttonVisible();
     }
 
     public void next(){
@@ -487,6 +487,9 @@ public class TestActivity extends AppCompatActivity {
             Button btn = (Button) findViewById(R.id.btnFinish);
             btn.setVisibility(View.VISIBLE);
         }
+
+        buttonVisible();
+
     }
 
     public void optionSelection(View view){
@@ -511,4 +514,16 @@ public class TestActivity extends AppCompatActivity {
 
         finish();
     }
+
+    public void buttonVisible(){
+
+        Button anteriorBtn = (Button) findViewById(R.id.anteriorButton);
+        if(position == 0){
+            anteriorBtn.setVisibility(View.GONE);
+        }else{
+            anteriorBtn.setVisibility(View.VISIBLE);
+        }
+
+    }
+
 }
